@@ -1,0 +1,129 @@
+/*!
+Theme Name: CHC Starter
+Theme URI: http://helpcenter.io
+Description: Customer Help Center Theme
+Author: Ram Ratan Maurya
+Author URI: http://mauryaratan.me
+Version: 0.1
+Tags: theme-options, responsive, full-width, page-templates, two-column, flexible-width, translation-ready
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: chc
+*/
+
+@import "compass/css3";
+@import "normalize";
+@import "preboot";
+@import "scaffolding";
+@import "fonts";
+
+*{
+  @include box-sizing(border-box);
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font: 500 100%/1.5 "Myriad Pro",Verdana,"Helvetica",Arial;
+  color: #666;
+  @include hyphens(auto);
+}
+
+a{
+  text-decoration: none;
+  @include transition(all .25s);
+}
+
+a, a:link{
+  color: #222;
+}
+
+a:not(.site-header){
+  border-bottom: 1px solid #ddd;
+}
+
+a:hover, a:link:hover{
+  border-color: #222;
+}
+
+%site-width{
+  max-width: 1000px;
+}
+
+%auto{
+  margin: 0 auto;
+}
+
+.site-content{
+  @extend %site-width;
+  @extend %auto;
+}
+
+.inside{
+  @extend %site-width;
+  @extend %auto;
+}
+
+.site-header{
+  border-bottom: 1px solid #ddd;
+  background: $header-bg;
+  padding: 25px 0;
+}
+
+.site-header a{
+  color: #666;
+  border: none;
+}
+
+.site-header .current-menu-item a,
+.site-header a:hover{
+  color: #fff;
+}
+
+.site-branding{
+  float: left;
+  text-transform: uppercase;
+  color: #555;
+  font-size: .70rem;
+}
+
+.site-branding:hover{
+  color: inherit;
+}
+
+.navbar{
+  float: right;
+}
+
+.navbar li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 35px;
+  margin-right: -.25em;
+}
+
+.main-navigation{
+  margin-top: 25px;
+}
+
+.homepage-search{
+  margin: 40px 0;
+  text-align: center;
+}
+
+.homepage-search input[type="search"]{
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font: inherit;
+}
+
+.homepage-search input[type="search"]:focus{
+  outline: 0;
+  border-color: #b4b4b4;
+}

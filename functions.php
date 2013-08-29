@@ -45,8 +45,7 @@ function chc_theme_setup(){
 endif;
 add_action( 'after_setup_theme', 'chc_theme_setup' );
 
-
-
+show_admin_bar(false);
 
 if( ! function_exists('chc_sidebar_init') ) :
 /**

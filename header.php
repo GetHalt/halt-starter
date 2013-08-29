@@ -22,15 +22,18 @@
 <div id="page" class="hfeed site">
 	
 	<header id="masthead" class="site-header clearfix" role="banner">
-		<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-		</a>
 		
-		<div id="navbar" class="navbar">
-			<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
-		</div><!-- #navbar -->
+		<div class="inside">
+			<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+			</a>
+			
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</div>
 
 	</header><!-- #masthead -->
 

@@ -16,10 +16,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="post" class="homepage-search">
-			<input type="search" name="main-search" id="main-search" placeholder="<?php _e( 'Search through site', 'chc' ); ?>">
-		</form>
-
 		<?php if( have_posts() ): ?>
 
 			<?php /* Start the Loop */ ?>

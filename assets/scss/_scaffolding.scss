@@ -1,0 +1,13 @@
+.site-footer{
+	background: $header-bg;
+	color: #666;
+	padding: 60px 0 100px;
+	text-align: center;
+	a{
+		border: none !important;
+		color: #666;
+		&:hover{
+			color: #ccc;
+		}
+	}
+}
