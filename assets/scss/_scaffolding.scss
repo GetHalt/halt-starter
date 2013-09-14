@@ -1,8 +1,13 @@
 .site-footer{
 	background: $header-bg;
 	color: #666;
-	padding: 60px 0 100px;
-	text-align: center;
+	border-top: 1px solid #ddd;
+	text-shadow: 0 1px 0 #FFF;
+	font-size: 13px;
+	padding: 20px 0;
+	p{
+		margin: 0;
+	}
 	a{
 		border: none !important;
 		color: #666;

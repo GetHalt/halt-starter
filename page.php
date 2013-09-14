@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
-Hello World from page.php
+<?php while(have_posts()): the_post(); ?>
+
+<?php the_content(); ?>
+
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

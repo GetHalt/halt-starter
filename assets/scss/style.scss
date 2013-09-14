@@ -1,14 +1,14 @@
 /*!
-Theme Name: CHC Starter
-Theme URI: http://helpcenter.io
-Description: Customer Help Center Theme
+Theme Name: Halt Starter
+Theme URI: http://halt.io
+Description: Github flavored Customer Help Center Theme
 Author: Ram Ratan Maurya
 Author URI: http://mauryaratan.me
 Version: 0.1
 Tags: theme-options, responsive, full-width, page-templates, two-column, flexible-width, translation-ready
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: chc
+Text Domain: halt
 */
 
 @import "compass/css3";
@@ -27,30 +27,19 @@ html {
 }
 
 body {
-  font: 400 100%/1.5 "Myriad Pro",Verdana,"Helvetica",Arial;
-  color: #666;
+  font: 15px "Helvetica Neue", helvetica, arial, freesans, clean, sans-serif;
+  color: #333;
   @include hyphens(auto);
 }
 
 a{
   text-decoration: none;
   @include transition(all .25s);
-}
-
-a, a:link{
-  color: #222;
-}
-
-a:not(.site-header){
-  border-bottom: 1px solid #ddd;
-}
-
-a:hover, a:link:hover{
-  border-color: #222;
+  color: $link-color;
 }
 
 %site-width{
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 %auto{
@@ -70,26 +59,33 @@ a:hover, a:link:hover{
 }
 
 .site-header{
-  border-bottom: 1px solid #ddd;
-  background: $header-bg;
-  padding: 25px 0;
+  border-bottom: 1px solid #cacaca;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 7px 0;
+  @include background( linear-gradient( #fafafa, #eaeaea ) );
+  @include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.4),0 0px 10px rgba(0, 0, 0, 0.1) );
+  a{
+    color: black;
+    &:hover{
+      color: $link-color;
+    }
+  }
 }
 
-.site-header a{
-  color: #666;
-  border: none;
+.main-navigation{
+  margin-top: 8px;
 }
 
-.site-header .current-menu-item a,
-.site-header a:hover{
-  color: #fff;
+.site-title{
+  margin: 0;
 }
 
 .site-branding{
   float: left;
-  text-transform: uppercase;
   color: #555;
   font-size: .70rem;
+  line-height: 1;
 }
 
 .site-branding:hover{
@@ -105,10 +101,6 @@ a:hover, a:link:hover{
   list-style: none;
   margin-left: 35px;
   margin-right: -.25em;
-}
-
-.main-navigation{
-  margin-top: 25px;
 }
 
 .homepage-search{
