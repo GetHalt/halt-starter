@@ -96,6 +96,13 @@ function chc_scripts_styles(){
 		
 	/* Register Scripts ---------------------------------------------------*/
 	wp_register_script( 'scripts', get_template_directory_uri().'/assets/js/scripts.js', array( 'jquery', 'backbone' ), '0.1', true );
+
+	wp_localize_script( 'scripts', 'halt_s_params', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'jsonurl' => home_url( 'wp-json.php/' ),
+		'getPost' => home_url( 'wp-json.php/posts/' ),
+		'getPage' => home_url( 'wp-json.php/pages/' ),
+	) );
 	
 	/* Enqueue Scripts ---------------------------------------------------*/
 	wp_enqueue_script( 'jquery' );
