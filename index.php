@@ -16,7 +16,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<div id="playground"></div>
+		<div id="playground">Playground is here…</div>
+
+		<hr>
 
 		<?php if( have_posts() ): ?>
 

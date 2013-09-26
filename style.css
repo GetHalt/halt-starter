@@ -1,7 +1,7 @@
 /*!
-Theme Name: Halt Starter
+Theme Name: First Halt
 Theme URI: http://halt.io
-Description: Github flavored Customer Help Center Theme
+Description: Github flavored Theme for Halt
 Author: Ram Ratan Maurya
 Author URI: http://mauryaratan.me
 Version: 0.1
@@ -333,21 +333,28 @@ table {
   clear: both; }
 
 /* line 1, ../scss/_scaffolding.scss */
-.site-footer {
+hr {
   background: whitesmoke;
+  height: 1px;
+  border: none;
+  margin: 30px 0; }
+
+/* line 8, ../scss/_scaffolding.scss */
+.site-footer {
+  background: #fafafa;
   color: #666;
   border-top: 1px solid #ddd;
   text-shadow: 0 1px 0 #FFF;
   font-size: 13px;
   padding: 20px 0; }
-  /* line 8, ../scss/_scaffolding.scss */
+  /* line 15, ../scss/_scaffolding.scss */
   .site-footer p {
     margin: 0; }
-  /* line 11, ../scss/_scaffolding.scss */
+  /* line 18, ../scss/_scaffolding.scss */
   .site-footer a {
     border: none !important;
     color: #666; }
-    /* line 14, ../scss/_scaffolding.scss */
+    /* line 21, ../scss/_scaffolding.scss */
     .site-footer a:hover {
       color: #ccc; }
 
@@ -411,48 +418,114 @@ table {
   font-style: normal;
   font-weight: 500; }
 
-/* line 20, ../scss/style.scss */
+@media screen and (min-width: 768px) {
+  /* line 2, ../scss/_grids.scss */
+  .grids {
+    max-width: 105%;
+    margin: 0 0 0 -3%; }
+
+  /* line 6, ../scss/_grids.scss */
+  .grids [class*="grid-"] {
+    display: inline-block;
+    margin: 0 0 0 3%;
+    margin-right: -.25em;
+    vertical-align: top; }
+
+  /* line 12, ../scss/_grids.scss */
+  .grid-1 {
+    width: 6.15%; }
+
+  /* line 15, ../scss/_grids.scss */
+  .grid-2 {
+    width: 14.5741%; }
+
+  /* line 19, ../scss/_grids.scss */
+  .grid-2-5 {
+    width: 17.07%; }
+
+  /* line 23, ../scss/_grids.scss */
+  .grid-3 {
+    width: 22.05%; }
+
+  /* line 26, ../scss/_grids.scss */
+  .grid-4, .grid-one-third {
+    width: 30.6%; }
+
+  /* line 29, ../scss/_grids.scss */
+  .grid-5 {
+    width: 39.583%; }
+
+  /* line 32, ../scss/_grids.scss */
+  .grid-6, .grid-half {
+    width: 47%; }
+
+  /* line 35, ../scss/_grids.scss */
+  .grid-7 {
+    width: 54.25%; }
+
+  /* line 38, ../scss/_grids.scss */
+  .grid-8, .grid-two-thirds {
+    width: 62.088%; }
+
+  /* line 41, ../scss/_grids.scss */
+  .grid-9 {
+    width: 72%; }
+
+  /* line 44, ../scss/_grids.scss */
+  .grid-10 {
+    width: 81.25%; }
+
+  /* line 47, ../scss/_grids.scss */
+  .grid-11 {
+    width: 89.583%; }
+
+  /* line 50, ../scss/_grids.scss */
+  .grid-12 {
+    width: 97.917%;
+    margin: 0; } }
+/* line 21, ../scss/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 24, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 html {
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
-/* line 29, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 body {
-  font: 15px "Helvetica Neue", helvetica, arial, freesans, clean, sans-serif;
-  color: #333;
+  font: 15px/1.6 "Helvetica Neue", helvetica, arial, freesans, clean, sans-serif;
+  color: #74747a;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto; }
 
-/* line 35, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 a {
   text-decoration: none;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
   -o-transition: all 0.25s;
   transition: all 0.25s;
-  color: #4183c4; }
+  color: #38bffa; }
 
-/* line 41, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 .site-content, .inside {
   max-width: 900px; }
 
-/* line 45, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .site-content, .inside {
   margin: 0 auto; }
 
-/* line 49, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 .site-content {
   padding: 30px 0;
   min-height: 430px; }
 
-/* line 61, ../scss/style.scss */
+/* line 67, ../scss/style.scss */
 .site-header {
   border-bottom: 1px solid #cacaca;
   font-weight: bold;
@@ -465,50 +538,65 @@ a {
   background: linear-gradient(#fafafa, #eaeaea);
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 0px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 0px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 0px 10px rgba(0, 0, 0, 0.1); }
-  /* line 68, ../scss/style.scss */
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 0px 10px rgba(0, 0, 0, 0.1);
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: sticky;
+  top: 0px; }
+  /* line 74, ../scss/style.scss */
   .site-header a {
     color: black; }
-    /* line 70, ../scss/style.scss */
+    /* line 76, ../scss/style.scss */
     .site-header a:hover {
-      color: #4183c4; }
+      color: #38bffa; }
+  /* line 84, ../scss/style.scss */
+  .admin-bar .site-header {
+    top: 32px; }
 
-/* line 76, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .main-navigation {
   margin-top: 8px; }
 
-/* line 80, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 .site-title {
-  margin: 0; }
+  margin: 0;
+  font-family: "Brandon Grotesque";
+  font-weight: 900;
+  border: 3px solid black;
+  text-transform: uppercase;
+  color: black;
+  line-height: 1;
+  -webkit-mask: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.7));
+  padding: 3px; }
 
-/* line 84, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .site-branding {
   float: left;
   color: #555;
   font-size: .70rem;
   line-height: 1; }
 
-/* line 91, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 .site-branding:hover {
   color: inherit; }
 
-/* line 95, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 .navbar {
   float: right; }
 
-/* line 99, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 .navbar li {
   display: inline-block;
   list-style: none;
   margin-left: 35px;
   margin-right: -.25em; }
 
-/* line 106, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 .homepage-search {
   margin: 40px 0;
   text-align: center; }
 
-/* line 111, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 .homepage-search input[type="search"] {
   width: 100%;
   padding: 8px 10px;
@@ -517,7 +605,20 @@ a {
   text-align: center;
   font: inherit; }
 
-/* line 120, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .homepage-search input[type="search"]:focus {
   outline: 0;
   border-color: #b4b4b4; }
+
+/**
+ * Articles
+ */
+/* line 151, ../scss/style.scss */
+.article-categories-list ul {
+  margin-bottom: 3% !important;
+  padding: 0; }
+/* line 155, ../scss/style.scss */
+.article-categories-list li {
+  border-bottom: 1px solid #E3E3E8;
+  padding: 5px 0;
+  list-style: none; }

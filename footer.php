@@ -11,7 +11,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="inside site-info">
-			<p>&copy; 2013 Halt. A Project by Ram Ratan Maurya and friends.</p>
+			<p>Help Desk Software Powered by <a href="//halt.io">Halt</a> &middot; Created by Ram Ratan Maurya and friends.</p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 
