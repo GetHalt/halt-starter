@@ -17,6 +17,7 @@ Text Domain: halt
 @import "scaffolding";
 @import "fonts";
 @import "grids";
+@import "article";
 
 *{
   @include box-sizing(border-box);
@@ -29,7 +30,7 @@ html {
 }
 
 body {
-  font: 15px/1.6 "Helvetica Neue", helvetica, arial, freesans, clean, sans-serif;
+  font: 15px/1.6 "Helvetica Neue", helvetica, arial, sans-serif;
   color: darken(#8E8E93, 10%);
   @include hyphens(auto);
 }
@@ -65,24 +66,18 @@ a{
 }
 
 .site-header{
-  border-bottom: 1px solid #cacaca;
   font-weight: bold;
-  font-size: 13px;
-  padding: 7px 0;
-  @include background( linear-gradient( #fafafa, #eaeaea ) );
-  @include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.4),0 0px 10px rgba(0, 0, 0, 0.1) );
+  @include rem('font-size', 14px);
+  .inside{
+    @extend %clearfix;
+    padding: 30px 0;
+    border-bottom: 1px solid whitesmoke;
+  }
   a{
     color: black;
     &:hover{
       color: $link-color;
     }
-  }
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: sticky;
-  top: 0px;
-  .admin-bar &{
-    top: 32px;
   }
 }
 
@@ -93,14 +88,14 @@ a{
 
 .site-title{
   margin: 0;
-  font-family: "Brandon Grotesque";
   font-weight: 900;
-  border: 3px solid black;
+  border: 2px solid black;
   text-transform: uppercase;
   color: black;
   line-height: 1;
   -webkit-mask: -webkit-linear-gradient(bottom, rgba(white, .8), rgba(black, .7));
-  padding: 3px;
+  @include rem('font-size', 16px);
+  padding: 6px;
 }
 
 .site-branding{
@@ -142,23 +137,4 @@ a{
 .homepage-search input[type="search"]:focus{
   outline: 0;
   border-color: #b4b4b4;
-}
-
-/**
- * Articles
- */
-.article-categories-list{
-  ul{
-    margin-bottom: 3% !important;
-    padding: 0;
-  }
-  li{
-    border-bottom: 1px solid #E3E3E8;
-    padding: 5px 0;
-    list-style: none;
-  }
-}
-
-.article-category{
-
 }

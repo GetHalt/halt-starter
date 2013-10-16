@@ -21,7 +21,7 @@
 
 <div id="page" class="hfeed site">
 	
-	<header id="masthead" class="site-header clearfix" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		
 		<div class="inside">
 			<a class="site-branding" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">

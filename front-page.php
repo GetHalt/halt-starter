@@ -38,7 +38,7 @@ get_header() ?>
 
 						echo "<ul class='grid-4'>";
 
-						echo "<h4 class='article-category'>{$term->name}</h4>";
+						echo "<h4 class='article-category-title'>{$term->name} <span class='article-count'>({$term->count})</span></h4>";
 
 						while( $query->have_posts() ) : $query->the_post();
 						?>
